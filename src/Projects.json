@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "name":"hiddenleaf",
+        "discription":"Hiddenleaf is a platform for anime enthusiasts to watch anime, read detailed reviews, and access information about their favorite series. Users can also easily download episodes for offline viewing. Enjoy a seamless anime experience with Hiddenleaf!",
+        "gitlink":"https://github.com/Umapathi2004/Portfolio",
+        "tools":["HTML","CSS","PHP","Javascript","Git","GitHub","MySQL","Database"],
+        "detials":"Hiddenleaf is a comprehensive platform designed for anime enthusiasts. Whether you’re a casual viewer or a dedicated fan, Hiddenleaf offers a seamless experience to watch your favorite anime series. The site features a vast library of anime content, ensuring that there's something for everyone. In addition to streaming anime, Hiddenleaf provides detailed reviews and in-depth information about each series. Users can read reviews to get insights into the storylines, characters, and overall quality of the anime. This feature helps users make informed decisions about what to watch next, enhancing their viewing experience.One of the standout features of Hiddenleaf is the easy download option. Users can download episodes effortlessly for offline viewing, allowing them to enjoy their favorite anime anytime, anywhere. The platform's user-friendly interface makes navigation simple and intuitive, ensuring a hassle-free experience for all users.",
+        "img":"../public/Project1.png"
+    },
+    {
+        "id":2,
+        "name":"Own Portfolio",
+        "discription":"Umapathi is a personal portfolio website developed using React, JavaScript, HTML, and CSS. It showcases my projects, skills, and professional journey, providing a comprehensive overview of my work and capabilities. Explore my portfolio to learn more about my expertise and the projects I have worked on.",
+        "gitlink":"https://github.com/Umapathi2004/Hiddenleaf",
+        "tools":["HTML","CSS","React","Javascript","Git","GitHub"],
+        "detials":"Umapathi is a personal portfolio website created using React, JavaScript, HTML, and CSS. This site serves as a comprehensive showcase of my skills, projects, and professional journey. It is designed to provide visitors with a clear understanding of my expertise and the breadth of my work in web development.The portfolio highlights various projects I have worked on, each demonstrating my proficiency in different aspects of web development. From dynamic, interactive websites to robust backend solutions, each project is presented with detailed descriptions and visual examples. This allows potential employers and collaborators to see the practical applications of my skills.In addition to project showcases, Umapathi includes sections about my background, experience, and the tools and technologies I specialize in. The user-friendly design ensures easy navigation, making it simple for visitors to explore my work and learn more about my professional journey. Visit my portfolio to discover how my skills and experience can contribute to your next project.",
+        "img":"../public/Project2.png"
+    },
+    {
+        "id":3,
+        "name":"nn teach",
+        "discription":"NN Teach is a user-friendly platform dedicated to learning programming languages. It offers structured courses, interactive lessons, and downloadable notes, making it easy for users to study at their own pace and enhance their programming skills effectively.",
+        "gitlink":"https://github.com/Umapathi2004/Hiddenleaf",
+        "tools":["HTML","CSS","PHP","Javascript","Git","GitHub","API","MySQL","Database"],
+        "detials":"NN Teach is an educational platform designed to facilitate the learning of programming languages. Built with a focus on user experience, NN Teach provides a comprehensive and accessible way for users to study various programming languages. The website offers structured courses, interactive lessons, and a plethora of resources to ensure a thorough understanding of the material.One of the standout features of NN Teach is its ease of use. The platform is designed to be intuitive, allowing users to navigate through courses effortlessly. Each programming language is broken down into manageable sections, with clear explanations and examples. This structured approach makes it easier for learners to grasp complex concepts and apply them in practical scenarios.Additionally, NN Teach provides downloadable notes for each lesson, enabling users to study offline at their convenience. These notes are meticulously crafted to complement the online content, ensuring that learners have all the necessary resources at their fingertips. Whether you’re a beginner looking to start your programming journey or an advanced learner seeking to deepen your knowledge, NN Teach is the ideal platform to support your learning goals.",
+        "img":"../public/Project3.png"
+    },
+    {
+        "id":4,
+        "name":"Weather APP",
+        "discription":"My weather finding app, built using React, allows users to effortlessly check current weather conditions and forecasts for any location. With a clean and intuitive interface, it provides accurate weather data and ensures a seamless user experience.",
+        "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/WeatherApp",
+        "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
+        "detials":"I've developed a robust weather finding application using React, designed to deliver accurate and up-to-date weather information to users. The app utilizes APIs to fetch real-time weather data for any location globally, ensuring users have access to reliable forecasts and current conditions.The interface is intuitive, allowing users to easily search for weather updates by city or location coordinates. It provides detailed weather reports, including temperature, humidity, wind speed, and precipitation forecasts. Users can also view extended forecasts to plan ahead effectively.Beyond basic weather data, the app offers additional features such as interactive maps, satellite imagery, and historical weather data analysis. These tools help users gain deeper insights into weather patterns and trends, making the app valuable for both casual users and weather enthusiasts.",
+        "img":"../public/Project4.png"
+    },
+    {
+        "id":5,
+        "name":"Currency Conversion",
+        "discription":"I developed a Currency Conversion app using React, allowing users to easily convert between different currencies. The app fetches real-time exchange rates using APIs and provides a simple, intuitive interface for quick conversions.",
+        "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/Amount",
+        "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
+        "detials":"My Currency Conversion app, built with React, simplifies the process of converting currencies for users worldwide. It leverages API integration to fetch real-time exchange rates, ensuring accuracy and reliability in currency conversions. The app supports a wide range of currencies, making it versatile for users dealing with various international transactions.The user interface is designed to be user-friendly and efficient. Users can easily select the currencies they want to convert, enter the amount, and instantly see the converted value. This streamlined process helps users make informed financial decisions without the hassle of manual calculations or searching for exchange rates.Beyond basic currency conversion, the app provides additional features such as historical exchange rate charts and currency trend analysis. These tools enable users to track currency fluctuations over time and make predictions based on historical data. Whether you’re a traveler, investor, or business professional, the Currency Conversion app offers valuable insights and functionalities to manage your currency needs effectively.",
+        "img":"../public/Project5.png"
+    },
+    {
+        "id":6,
+        "name":"QR Generater",
+        "discription":"My QR code generator website allows users to quickly generate QR codes for URLs, text, and other data types. Built using modern web technologies, it offers a simple interface where users can customize QR code colors and sizes before downloading or sharing them.",
+        "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/QRcode",
+        "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
+        "detials":"The QR Code Generator website I've developed provides a convenient tool for creating QR codes effortlessly. Users can generate QR codes for various types of data, including URLs, text, contact information, and more. The platform supports customization options such as QR code color selection and size adjustment, allowing users to tailor the appearance of their QR codes to suit their needs.The user interface is designed to be intuitive and user-friendly, ensuring that even those unfamiliar with QR technology can easily navigate and use the service. Once generated, QR codes can be downloaded in PNG format for printing or sharing digitally. This makes it ideal for businesses, events, and personal use cases where quick access to information via QR codes is beneficial.Additionally, the website provides insights into QR code usage trends and best practices for effective implementation. Whether you're promoting a website, sharing contact details, or enhancing marketing campaigns, the QR Code Generator website offers a versatile solution for integrating QR technology into your strategies.",
+        "img":"../public/Project6.png"
+    },
+    {
+        "id":7,
+        "name":"Social Media Profile",
+        "discription":"I've developed a dynamic social media profile website where users can create personalized profiles, connect with friends, share updates, and engage with a community of like-minded individuals. The platform offers intuitive navigation, real-time updates, and customizable privacy settings to enhance user experience and interaction.",
+        "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/Cards",
+        "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
+        "detials":"I've developed a dynamic social media profile website that serves as a comprehensive platform for users to create and manage their online identities. Built with modern web technologies, the website allows users to create personalized profiles with detailed information such as bio, interests, contact details, and more. It offers a seamless user experience with intuitive navigation and interactive features.Users can connect with friends, follow updates from others, and share posts, photos, and videos within their network. The platform supports real-time updates, ensuring users stay connected and informed about the latest activities and interactions within their social circle. Privacy settings and customization options empower users to control their profile visibility and content sharing preferences.Beyond personal profiles, the website may include features like messaging, groups, events, and notifications to enhance user engagement and community interaction. It provides a space for users to express themselves, build relationships, and participate in discussions and activities based on shared interests and connections.",
+        "img":"../public/Project7.png"
+    },
+    {
+        "id":8,
+        "name":"Shoping Cart",
+        "discription":"I've developed a shopping cart app using React, providing users with a seamless shopping experience. The app allows users to browse products, add them to cart, manage quantities, and proceed to checkout. It features a user-friendly interface with responsive design, ensuring a smooth navigation and shopping process.",
+        "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/Cards",
+        "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
+        "detials":"My shopping cart app, built using React, offers a robust platform for users to browse, select, and purchase products online. The app features a responsive design that adapts seamlessly across devices, providing an optimized shopping experience on desktops, tablets, and smartphones.Users can explore a wide range of products categorized neatly for easy navigation. Each product listing includes detailed descriptions, pricing information, and images to help users make informed purchasing decisions. The shopping cart functionality allows users to add items, adjust quantities, and remove products as needed before proceeding to checkout.The checkout process is streamlined, with secure payment options and order confirmation features ensuring a smooth transaction experience. Additionally, the app may include features such as user accounts for order history tracking, wish lists, and customer support integration to enhance user satisfaction and engagement.",
+        "img":"../public/Project8.png"
+    }
+]

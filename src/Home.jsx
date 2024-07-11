@@ -1,7 +1,8 @@
 import React from 'react'
-
+import Projects from "./Projects.json"
 export const Home = () => {
-  const skills=['HTML','CSS','JavaScript','PHP','MySQL','RDBMS','React','Bootstrap','Git','GitHub','Responsive Design']
+  const skills=['HTML','CSS','JavaScript','PHP','MySQL','RDBMS','React','Bootstrap','Git','GitHub','Responsive Design','API']
+  console.log(Projects);
   return (
     <>
     <nav>
@@ -18,8 +19,8 @@ export const Home = () => {
     </nav>
     <div className="slidone">
         <div className="socialmedias">
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/umapathi2004/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Umapathi2004"><i class="fa-brands fa-github"></i></a>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
@@ -51,7 +52,7 @@ export const Home = () => {
             <div className="skills">
             <div className="heading">My Skills</div>
                 <ul>
-                    {skills.map((skill)=>(<li>{skill}</li>))}
+                    {skills.map((skill,index)=>(<li key={index}>{skill}</li>))}
                 </ul>
             </div>
         </div>
@@ -62,15 +63,17 @@ export const Home = () => {
             <div className="userdefined_line"></div>
         </div>
         <span>Here you will find some of the personal and clients projects that I created with each project<br/> containing its own case study</span>
-        <div className="container">
-            <div className="projects">
-                <img src="" alt="" />
-                <div className="projects_detials">
-                    <div className="heading"></div>
-                    <div className="para"></div>
-                    <button>GitHub</button>
-                </div>
-            </div>
+        <div className="container">{
+                Projects.map((project)=>(
+                   <div className="projects" key={project.id}>
+                   <img src={project.img} alt=""/>
+                   <div className="projects_detials">
+                       <div className="heading">{project.name}</div>
+                       <div className="para">{project.discription}</div>
+                       <button>Case Study</button>
+                   </div>
+                   </div>
+                ))}
         </div>
     </div>
     </>

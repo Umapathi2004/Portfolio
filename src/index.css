@@ -5,15 +5,21 @@
   padding: 0;
   font-family: "Mukta", sans-serif;;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   width: 100%;
   height: auto;
   background-image: url("./assets/Background.svg");
   background-position: top;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  /* background-attachment:fixed; */
   background-size:200%;
-  scroll-behavior: smooth;
+}
+::selection{
+  background-color: #befedf;
+  color: #022c18;
 }
 nav{
   width: 100%;
@@ -160,7 +166,7 @@ nav{
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
   width: 90%;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 .known_me .heading{
   display: flex;
@@ -222,10 +228,14 @@ nav{
 .skills ul li{
   padding: 8px 16px;
   border-radius: 5px;
-  background-color: #ecfdf5;
+  background-color: #d0fce7;
   font-size: 1em;
   font-weight: 500;
   color: #022c18;
+  cursor: pointer;
+}
+.skills ul li:hover{
+  background-color: #befedf;
 }
 .slidthree{
   display: flex;
@@ -262,4 +272,63 @@ nav{
   font-weight: 500;
   color: #022c18;
   margin-top: 30px;
+}
+.projects{
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap:60px;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 100px;
+  margin-bottom: 40px;
+  place-items: center;
+}
+.projects img{
+  max-width: 550px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-left: 40px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.projects_detials {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.projects_detials .heading{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  color: #022c18;
+}
+.projects_detials .para{
+  max-width: 550px;
+  min-width: auto;
+  font-size: 1em;
+  font-weight: 400;
+  color: #022c18;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.projects_detials button{
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  background-color: #10b969;
+  border:none;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.projects_detials button:hover{
+  background-color:#059652;
 }
