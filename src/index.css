@@ -11,11 +11,12 @@ html{
 body{
   width: 100%;
   height: auto;
-  background-image: url("./assets/Background.svg");
-  background-position: top;
-  background-repeat: no-repeat;
+  /* background-image: url("./assets/Background.svg"); */
+  background-color: #ffff;
+  /* background-position: top;
+  background-repeat: no-repeat; */
   /* background-attachment:fixed; */
-  background-size:200%;
+  /* background-size:200%; */
 }
 ::selection{
   background-color: #befedf;
@@ -26,7 +27,7 @@ nav{
   height: auto;
   display: flex;
   justify-content: space-between;
-  background-color: #ecfdf5;
+  background-color: white;
   position: fixed;
   z-index: 2;
 }
@@ -45,6 +46,7 @@ nav{
   display: flex;
   text-transform: uppercase;
   font-size: 1.08rem;
+  /* font-size: clamp(0.8em, 7vw, 1.08em); */
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -61,6 +63,12 @@ nav{
 }
 .slidone{
   width: 100%;
+  background-image: url("./assets/Background.svg");
+  background-color: #022c18;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:200%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -95,7 +103,7 @@ nav{
   z-index: 0;
 }
 .intro h1{
-  font-size: 4.5em;
+  font-size: clamp(1.5em, 7vw , 4.5em);
   color: #022c18;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -107,7 +115,9 @@ nav{
   color: #022c18;
   font-weight: 500;
   text-transform: capitalize;
-  margin-bottom: 40px;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 40px 40px 40px;
 }
 .intro button{
   font-size: 1.2em;
@@ -131,8 +141,8 @@ nav{
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: #ffff;
-  padding-bottom: 40px;
+  background-color: #f6f6f6;
+  padding-bottom: 100px;
 }
 .slidtwo .heading{
   display: flex;
@@ -156,10 +166,12 @@ nav{
 }
 .slidtwo span{
   text-align: center;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 30px 40px 0 40px;
   font-size: 1.2em;
   font-weight: 500;
   color: #022c18;
-  margin-top: 30px;
 }
 .me-skill{
   display: grid;
@@ -244,7 +256,7 @@ nav{
   width: 100%;
   height: auto;
   background-color: #ecfdf5;
-  
+  padding-bottom: 100px;
 }
 .slidthree .heading{
   display: flex;
@@ -271,10 +283,17 @@ nav{
   font-size: 1.2em;
   font-weight: 500;
   color: #022c18;
-  margin-top: 30px;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 30px 40px 0 40px;
+}
+.slidthree .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .projects{
-  width: 100%;
+  width: 90%;
   height: auto;
   display: grid;
   gap:60px;
@@ -284,10 +303,9 @@ nav{
   place-items: center;
 }
 .projects img{
-  max-width: 550px;
+  width:100%;
   object-fit: contain;
   border-radius: 5px;
-  margin-left: 40px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .projects_detials {
@@ -295,7 +313,6 @@ nav{
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  margin-right: 40px;
 }
 .projects_detials .heading{
   display: flex;
@@ -304,20 +321,116 @@ nav{
   font-size: 1.5em;
   font-weight: bold;
   text-transform: capitalize;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   color: #022c18;
 }
 .projects_detials .para{
-  max-width: 550px;
-  min-width: auto;
   font-size: 1em;
+  height: 110px;
+  overflow: hidden;
   font-weight: 400;
   color: #022c18;
   letter-spacing: 1px;
   text-align: justify;
 }
-.projects_detials button{
+.projects_detials a{
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 32px;
+  text-transform: uppercase;
+  background-color: #10b969;
+  border:none;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 25px;
+  text-decoration: none;
+}
+.projects_detials a:hover{
+  background-color:#059652;
+}
+.slidfour{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f6;
+  padding-bottom: 100px;
+}
+.slidfour .heading{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap:20px;
+}
+.slidfour .heading h2{
+  margin-top: 100px;
+  color: #022c18;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+}
+.slidfour .heading .userdefined_line{
+  width: 40px;
+  height: 5px;
+  background-color: #10b969;
+  border-radius: 5px;
+}
+.slidfour span{
+  text-align: center;
   font-size: 1.2em;
+  font-weight: 500;
+  color: #022c18;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 30px 40px 0 40px;
+}
+.slidfour .messageForm{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 100px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.slidfour .messageForm label{
+  font-size: 1em;
+  font-weight: bold;
+  color: #022c18;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.slidfour .messageForm input{
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  background-color: #3c484217;
+  border-radius: 5px;
+}
+.slidfour .messageForm textarea{
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  background-color: #3c484217;
+  border-radius: 5px;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 150px;
+}
+.slidfour .messageForm button{
+  width: fit-content;
+  text-align: end;font-size: 1.2em;
   font-weight: bold;
   letter-spacing: 1px;
   padding: 10px 40px;
@@ -329,6 +442,76 @@ nav{
   border-radius: 5px;
   margin-top: 40px;
 }
-.projects_detials button:hover{
+.slidfour .messageForm button:hover{
   background-color:#059652;
+}
+footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+footer .footer_content{
+  width: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ffffff62;
+  padding-bottom: 80px;
+}
+footer .footer_content .content1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap:10px;
+}
+footer .footer_content .content1 h2{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+footer .footer_content .content1 ul{
+  display: flex;
+  list-style: none;
+  gap:15px;
+}
+footer .footer_content .content1 ul li a{
+  font-size: 1.5em;
+  color: #ffff;
+}
+footer .footer_content .content2{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap:10px;
+}
+footer .footer_content .content2 h2{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+footer .footer_content .content2 p{
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+.copyright{
+  margin-bottom: 40px;
+  font-size:.8em;
+  letter-spacing: 1px;
+}
+.copyright a{
+  color: #ffff;
+}
+.caseStudy_slide1{
+  width: 100%;
+  height: 100vh;
+  background-color: #d0fce7;
 }

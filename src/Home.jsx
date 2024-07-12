@@ -1,8 +1,8 @@
 import React from 'react'
 import Projects from "./Projects.json"
+import { Link } from 'react-router-dom'
 export const Home = () => {
-  const skills=['HTML','CSS','JavaScript','PHP','MySQL','RDBMS','React','Bootstrap','Git','GitHub','Responsive Design','API']
-  console.log(Projects);
+  const skills=['HTML','CSS','JavaScript','PHP','MySQL','RDBMS','React','Bootstrap','Git','GitHub','Responsive Design','APIs']
   return (
     <>
     <nav>
@@ -19,15 +19,15 @@ export const Home = () => {
     </nav>
     <div className="slidone">
         <div className="socialmedias">
-            <a href="https://www.linkedin.com/in/umapathi2004/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Umapathi2004"><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/umapathi2004/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Umapathi2004" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/umapathi1014/?igsh=ZGUzMzM3NWJiOQ%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/umapathi1014" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://wa.me/917094350136" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
         <div className="intro">
             <h1>Hey, I'm Umapathi</h1>
-            <p>Skilled web developer with expertise in building responsive and user-friendly web applications,<br/> ensuring optimal results.</p>
+            <p>Skilled web developer with expertise in building responsive and user-friendly web applications, ensuring optimal results.</p>
             <button>Projects</button>
         </div>
     </div>
@@ -36,7 +36,7 @@ export const Home = () => {
             <h2>About me</h2>
             <div className="userdefined_line"></div>
         </div>
-        <span>Here you will find more information about me, what I do, and my current skills mostly in terms<br/> of programming and technology</span>
+        <span>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</span>
         <div className="me-skill">
             <div className="known_me">
                 <div className="heading">Get to know me!</div>
@@ -62,7 +62,7 @@ export const Home = () => {
             <h2>PROJECTS</h2>
             <div className="userdefined_line"></div>
         </div>
-        <span>Here you will find some of the personal and clients projects that I created with each project<br/> containing its own case study</span>
+        <span>Here you will find some of the personal and clients projects that I created with each project containing its own case study</span>
         <div className="container">{
                 Projects.map((project)=>(
                    <div className="projects" key={project.id}>
@@ -70,12 +70,50 @@ export const Home = () => {
                    <div className="projects_detials">
                        <div className="heading">{project.name}</div>
                        <div className="para">{project.discription}</div>
-                       <button>Case Study</button>
+                       <Link to={`/CaseStudy?id=${project.id}`}>
+                       Case Study
+                       </Link>
                    </div>
                    </div>
                 ))}
         </div>
     </div>
+    <div className="slidfour">
+        <div className="heading">
+            <h2>CONTACT</h2>
+            <div className="userdefined_line"></div>
+        </div>
+        <span>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</span>
+        <form className='messageForm'>
+            <label htmlFor="name">Name</label>
+            <input type="text" placeholder='Enter Your Name' required id='name'/>
+            <label htmlFor="mail">Email</label>
+            <input type="email" placeholder='Enter Your Email' required id='mail'/>
+            <label htmlFor="message">Message</label>
+            <textarea placeholder='Enter Your Message' required id='message'></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+    <footer>
+        <div className="footer_content">
+            <div className="content1">
+                <h2>Social</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/umapathi2004/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://wa.me/917094350136" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://x.com/umapathi1014" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/Umapathi2004" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/umapathi1014/?igsh=ZGUzMzM3NWJiOQ%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div className="content2">
+                <h2>Umapathi</h2>
+                <p>A Frontend focused Web Developer building the Frontend of Websites and</p>
+                <p>Web Applications that leads to the success of the overall product</p>
+            </div>
+        </div>
+        <div className="copyright">© Copyright 2024 . Made by <Link to={"/"}>Umapathi</Link></div>
+    </footer>
     </>
   )
 }

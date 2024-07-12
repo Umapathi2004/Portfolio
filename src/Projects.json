@@ -64,7 +64,7 @@
     },
     {
         "id":8,
-        "name":"Shoping Cart",
+        "name":"Shopping Cart",
         "discription":"I've developed a shopping cart app using React, providing users with a seamless shopping experience. The app allows users to browse products, add them to cart, manage quantities, and proceed to checkout. It features a user-friendly interface with responsive design, ensuring a smooth navigation and shopping process.",
         "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/Cards",
         "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
