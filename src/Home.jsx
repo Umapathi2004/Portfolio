@@ -1,23 +1,97 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Projects from "./Projects.json"
 import { Link } from 'react-router-dom'
 export const Home = () => {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+      });
+    
+      const [submitting, setSubmitting] = useState(false); // State to track form submission status
+    
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevFormData) => ({
+          ...prevFormData,
+          [name]: value,
+        }));
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        setSubmitting(true);
+    
+        try {
+          // Example of handling form submission (replace with your own logic)
+          console.log(formData);
+    
+          // Simulate asynchronous operation (e.g., API call to Formspree)
+          const response = await fetch('https://formspree.io/f/xpwawpvg', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+          });
+    
+          if (!response.ok) {
+            throw new Error('Failed to submit form.');
+          }
+    
+          // Optionally reset the form fields after successful submission
+          setFormData({
+            name: '',
+            email: '',
+            message: '',
+          });
+    
+          alert('Form submitted successfully!');
+        } catch (error) {
+          console.error('Error submitting form:', error);
+          alert('Failed to submit form. Please try again later.');
+        } finally {
+          setSubmitting(false);
+        }
+      };
+  
+
+  const homeRef = useRef(null);  
+  const scrollTohome = () => {
+    homeRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const aboutRef = useRef(null);  
+  const scrollToAbout = () => {
+    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const projectRef = useRef(null);  
+  const scrollToproject = () => {
+    projectRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  
+  const contactRef = useRef(null);  
+  const scrollTocontact = () => {
+    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   const skills=['HTML','CSS','JavaScript','PHP','MySQL','RDBMS','React','Bootstrap','Git','GitHub','Responsive Design','APIs']
   return (
     <>
     <nav>
         <div className="logo">
-            <img src="" alt="" />
+            <img src="../public/icon.png" alt="" />
             <p>Umapathi</p>
         </div>
         <ul className='menu'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contects</li>
+            <li onClick={scrollTohome}><Link to={"/"}>Home</Link></li>
+            <li onClick={scrollToAbout}>About</li>
+            <li onClick={scrollToproject}>Projects</li>
+            <li onClick={scrollTocontact}>Contects</li>
         </ul>
     </nav>
-    <div className="slidone">
+    <div className="slidone" ref={homeRef}>
         <div className="socialmedias">
             <a href="https://www.linkedin.com/in/umapathi2004/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/Umapathi2004" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -28,10 +102,10 @@ export const Home = () => {
         <div className="intro">
             <h1>Hey, I'm Umapathi</h1>
             <p>Skilled web developer with expertise in building responsive and user-friendly web applications, ensuring optimal results.</p>
-            <button>Projects</button>
+            <button onClick={scrollToproject}>Projects</button>
         </div>
     </div>
-    <div className="slidtwo">
+    <div className="slidtwo" ref={aboutRef}>
         <div className="heading">
             <h2>About me</h2>
             <div className="userdefined_line"></div>
@@ -47,7 +121,7 @@ export const Home = () => {
 
                 <p>I'm open to <b>Job</b> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <b>contact</b> me.</p>
                 </div>
-                <button>Contact</button>
+                <button onClick={scrollTocontact}>Contact</button>
             </div>
             <div className="skills">
             <div className="heading">My Skills</div>
@@ -57,7 +131,7 @@ export const Home = () => {
             </div>
         </div>
     </div>
-    <div className="slidthree">
+    <div className="slidthree" ref={projectRef}>
         <div className="heading">
             <h2>PROJECTS</h2>
             <div className="userdefined_line"></div>
@@ -78,20 +152,20 @@ export const Home = () => {
                 ))}
         </div>
     </div>
-    <div className="slidfour">
+    <div className="slidfour" ref={contactRef}>
         <div className="heading">
             <h2>CONTACT</h2>
             <div className="userdefined_line"></div>
         </div>
         <span>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</span>
-        <form className='messageForm'>
+        <form className='messageForm' onSubmit={handleSubmit}>
             <label htmlFor="name">Name</label>
-            <input type="text" placeholder='Enter Your Name' required id='name'/>
+            <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder='Enter Your Name' required id='name'/>
             <label htmlFor="mail">Email</label>
-            <input type="email" placeholder='Enter Your Email' required id='mail'/>
+            <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Enter Your Email' required id='mail'/>
             <label htmlFor="message">Message</label>
-            <textarea placeholder='Enter Your Message' required id='message'></textarea>
-            <button>Submit</button>
+            <textarea placeholder='Enter Your Message' name="message" value={formData.message} onChange={handleChange} required id='message'></textarea>
+            <button type="submit">Submit</button>
         </form>
     </div>
     <footer>

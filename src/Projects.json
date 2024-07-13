@@ -3,7 +3,7 @@
         "id":1,
         "name":"hiddenleaf",
         "discription":"Hiddenleaf is a platform for anime enthusiasts to watch anime, read detailed reviews, and access information about their favorite series. Users can also easily download episodes for offline viewing. Enjoy a seamless anime experience with Hiddenleaf!",
-        "gitlink":"https://github.com/Umapathi2004/Portfolio",
+        "gitlink":"https://github.com/Umapathi2004/Hiddenleaf",
         "tools":["HTML","CSS","PHP","Javascript","Git","GitHub","MySQL","Database"],
         "detials":"Hiddenleaf is a comprehensive platform designed for anime enthusiasts. Whether you’re a casual viewer or a dedicated fan, Hiddenleaf offers a seamless experience to watch your favorite anime series. The site features a vast library of anime content, ensuring that there's something for everyone. In addition to streaming anime, Hiddenleaf provides detailed reviews and in-depth information about each series. Users can read reviews to get insights into the storylines, characters, and overall quality of the anime. This feature helps users make informed decisions about what to watch next, enhancing their viewing experience.One of the standout features of Hiddenleaf is the easy download option. Users can download episodes effortlessly for offline viewing, allowing them to enjoy their favorite anime anytime, anywhere. The platform's user-friendly interface makes navigation simple and intuitive, ensuring a hassle-free experience for all users.",
         "img":"../public/Project1.png"
@@ -12,7 +12,7 @@
         "id":2,
         "name":"Own Portfolio",
         "discription":"Umapathi is a personal portfolio website developed using React, JavaScript, HTML, and CSS. It showcases my projects, skills, and professional journey, providing a comprehensive overview of my work and capabilities. Explore my portfolio to learn more about my expertise and the projects I have worked on.",
-        "gitlink":"https://github.com/Umapathi2004/Hiddenleaf",
+        "gitlink":"https://github.com/Umapathi2004/Portfolio",
         "tools":["HTML","CSS","React","Javascript","Git","GitHub"],
         "detials":"Umapathi is a personal portfolio website created using React, JavaScript, HTML, and CSS. This site serves as a comprehensive showcase of my skills, projects, and professional journey. It is designed to provide visitors with a clear understanding of my expertise and the breadth of my work in web development.The portfolio highlights various projects I have worked on, each demonstrating my proficiency in different aspects of web development. From dynamic, interactive websites to robust backend solutions, each project is presented with detailed descriptions and visual examples. This allows potential employers and collaborators to see the practical applications of my skills.In addition to project showcases, Umapathi includes sections about my background, experience, and the tools and technologies I specialize in. The user-friendly design ensures easy navigation, making it simple for visitors to explore my work and learn more about my professional journey. Visit my portfolio to discover how my skills and experience can contribute to your next project.",
         "img":"../public/Project2.png"

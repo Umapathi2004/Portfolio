@@ -25,22 +25,31 @@ body{
 nav{
   width: 100%;
   height: auto;
+  height: 80px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: white;
   position: fixed;
   z-index: 2;
 }
 .logo{
+  height: 40px;
   margin-left: 40px;
   gap:20px;
-  padding: 20px;
   color:#10b969;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  height: 100%;
+  border-radius: 50%;
 }
 .menu{
   margin-right: 40px;
   list-style: none;
   gap: 40px;
+  height: 100%;
 }
 .menu,.logo{
   display: flex;
@@ -51,11 +60,17 @@ nav{
   font-weight: 600;
 }
 .menu li{
-  padding: 20px;
+  height: 100%;
   border-bottom: 2px solid transparent;
   cursor: pointer;
   color: #10b969;
   transition: all ease .6s;
+  display: flex;
+  align-items: center;
+}
+.menu li a{
+  color:#10b969;
+  text-decoration: none;
 }
 .menu li:hover{
   color: #059652;
@@ -255,7 +270,7 @@ nav{
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: #ecfdf5;
+  background-color: #d0fce7;
   padding-bottom: 100px;
 }
 .slidthree .heading{
@@ -510,8 +525,130 @@ footer .footer_content .content2 p{
 .copyright a{
   color: #ffff;
 }
-.caseStudy_slide1{
+.caseStudy_slid1{
   width: 100%;
   height: 100vh;
   background-color: #d0fce7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.caseStudy_slid1 h1{
+  font-size: clamp(1.5em, 7vw , 4.5em);
+  color: #022c18;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.caseStudy_slid1 p{
+  font-size: 1.3em;
+  initial-letter: 1px;
+  text-align: center;
+  color: #022c18;
+  font-weight: 500;
+  text-transform: capitalize;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 40px 0 40px;
+}
+.caseStudy_slid1 a{
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  background-color: #10b969;
+  border:none;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 40px;
+  text-decoration: none;
+}
+.caseStudy_slid1 a:hover{
+  background-color:#059652;
+}
+.caseStudy_slid2{
+  width: 100%;
+  height: auto;
+  padding: 100px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.caseStudy_slid2 .caseStudy_container{
+  width: 80%;
+}
+.caseStudy_slid2 .caseStudy_container img{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.caseStudy_slid2 .caseStudy_container .heading{
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: #022c18;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+}
+.caseStudy_slid2 .caseStudy_container p{
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #022c18;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.caseStudy_slid2 .caseStudy_container ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.caseStudy_slid2 .caseStudy_container ul li{
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #d0fce7;
+  font-size: 1em;
+  font-weight: 500;
+  color: #022c18;
+  cursor: pointer;
+}
+.caseStudy_slid2 .caseStudy_container ul li:hover{
+  background-color: #befedf;
+}
+.caseStudy_slid2 .caseStudy_container .buttons{
+  display: flex;
+  gap:20px;
+}
+.caseStudy_slid2 .caseStudy_container .buttons a{
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border:none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 40px;
+  text-decoration: none;
+  border: 2px solid #10b969;
+}
+.nonoutline{
+  background-color: #10b969 !important;
+  color: #ffff !important;
+}
+.nonoutline:hover{
+  background-color: transparent !important;
+  color: #10b969 !important;
+}
+.outline{
+  background-color: transparent !important;
+  color: #10b969 !important;
+}
+.outline:hover{
+  background-color: #10b969 !important;
+  color: #ffff !important;
 }
