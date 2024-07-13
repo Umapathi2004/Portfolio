@@ -797,6 +797,9 @@ footer .footer_content .content2 p{
   }
 }
 @media (max-width: 667px) {
+  .slidone{
+    background-size:670%;
+  }
   .logo p{
     display: block;
     font-size: 1.2em;
