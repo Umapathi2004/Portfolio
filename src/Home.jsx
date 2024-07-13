@@ -2,7 +2,10 @@ import React, { useRef, useState } from 'react'
 import Projects from "./Projects.json"
 import { Link } from 'react-router-dom'
 export const Home = () => {
-
+    const [manuAction,setmenuAction]=useState(false);
+    const addAction=()=>{
+      manuAction?setmenuAction(false):setmenuAction(true);
+    }
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -59,21 +62,25 @@ export const Home = () => {
 
   const homeRef = useRef(null);  
   const scrollTohome = () => {
+    addAction();
     homeRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   const aboutRef = useRef(null);  
   const scrollToAbout = () => {
+    addAction();
     aboutRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   const projectRef = useRef(null);  
   const scrollToproject = () => {
+    addAction();
     projectRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   
   const contactRef = useRef(null);  
   const scrollTocontact = () => {
+    addAction();
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   const skills=['HTML','CSS','JavaScript','PHP','MySQL','RDBMS','React','Bootstrap','Git','GitHub','Responsive Design','APIs']
@@ -84,13 +91,22 @@ export const Home = () => {
             <img src="../public/icon.png" alt="" />
             <p>Umapathi</p>
         </div>
+        <div className='innermenu'>
         <ul className='menu'>
             <li onClick={scrollTohome}><Link to={"/"}>Home</Link></li>
             <li onClick={scrollToAbout}>About</li>
             <li onClick={scrollToproject}>Projects</li>
             <li onClick={scrollTocontact}>Contects</li>
         </ul>
+        <i class="fa-solid fa-bars" onClick={addAction}></i>
+        </div>
     </nav>
+    <ul className={`phone_menu ${manuAction?"active":"disable"}`}>
+            <li onClick={scrollTohome} className="want"><Link to={"/"}>Home</Link></li>
+            <li onClick={scrollToAbout}>About</li>
+            <li onClick={scrollToproject}>Projects</li>
+            <li onClick={scrollTocontact}>Contects</li>
+    </ul>
     <div className="slidone" ref={homeRef}>
         <div className="socialmedias">
             <a href="https://www.linkedin.com/in/umapathi2004/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -117,7 +133,7 @@ export const Home = () => {
                 <div className="content">
                 <p>I'm a <b>Frontend Focused Web Developer</b> building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <b>Projects</b> section.</p>
 
-                <p>I also like sharing content related to the stuff that I have learned over the years in <b>Web Development</b> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a href="">Linkedin</a> and <a href="">Instagram</a> where I post useful content related to Web Development and Programming</p>
+                <p>I also like sharing content related to the stuff that I have learned over the years in <b>Web Development</b> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a href="https://www.linkedin.com/in/umapathi2004/" target="_blank">Linkedin</a> and <a href="https://www.instagram.com/umapathi1014/?igsh=ZGUzMzM3NWJiOQ%3D%3D" target="_blank">Instagram</a> where I post useful content related to Web Development and Programming</p>
 
                 <p>I'm open to <b>Job</b> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <b>contact</b> me.</p>
                 </div>

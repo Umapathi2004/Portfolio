@@ -3,6 +3,10 @@ import { Link, useLocation } from 'react-router-dom';
 import Projects from './Projects.json';
 
 export const CaseStudy = () => {
+    const [manuAction,setmenuAction]=useState(false);
+    const addAction=()=>{
+      manuAction?setmenuAction(false):setmenuAction(true);
+    }
   const homeRef = useRef(null); 
   useEffect(()=>{
   homeRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -27,13 +31,22 @@ export const CaseStudy = () => {
             <img src="../public/icon.png" alt="" />
             <p>Umapathi</p>
         </div>
+        <div className='innermenu'>
         <ul className='menu'>
             <li><Link to={"/"}>Home</Link></li>
             <li><Link to={"/"}>About</Link></li>
             <li><Link to={"/"}>Projects</Link></li>
             <li><Link to={"/"}>Contects</Link></li>
         </ul>
+        <i class="fa-solid fa-bars" onClick={addAction}></i>
+        </div>
     </nav>
+    <ul className={`phone_menu ${manuAction?"active":"disable"}`}>
+            <li className="want"><Link to={"/"}>Home</Link></li>
+            <li><Link to={"/"}>About</Link></li>
+            <li><Link to={"/"}>Projects</Link></li>
+            <li><Link to={"/"}>Contects</Link></li>
+    </ul>
     <div className="caseStudy_slid1" ref={homeRef}>
         <h1>{filtered.name}</h1>
         <p>This page contains the case study of Boreal Coffee Clone Website which includes the Project Overview, Tools Used and Live Links to the official product.</p>

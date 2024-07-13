@@ -34,12 +34,15 @@ nav{
   z-index: 2;
 }
 .logo{
-  height: 40px;
+  height: 60px;
   margin-left: 40px;
   gap:20px;
   color:#10b969;
   display: flex;
   align-items: center;
+}
+.logo p{
+  display: block;
 }
 .logo img{
   height: 100%;
@@ -51,6 +54,21 @@ nav{
   gap: 40px;
   height: 100%;
 }
+ .innermenu{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.innermenu i{
+  margin-right: 30px;
+  font-size: 1.5em;
+  color: #10b969;
+  display: none;
+  cursor: pointer;
+}
+.innermenu i:hover{
+  color: #059652;
+}
 .menu,.logo{
   display: flex;
   text-transform: uppercase;
@@ -58,9 +76,12 @@ nav{
   /* font-size: clamp(0.8em, 7vw, 1.08em); */
   letter-spacing: 1px;
   font-weight: 600;
+  align-items: center;
 }
+
 .menu li{
   height: 100%;
+  padding: 0 20px 0 20px;
   border-bottom: 2px solid transparent;
   cursor: pointer;
   color: #10b969;
@@ -187,6 +208,7 @@ nav{
   font-size: 1.2em;
   font-weight: 500;
   color: #022c18;
+  letter-spacing: 1px;
 }
 .me-skill{
   display: grid;
@@ -301,6 +323,7 @@ nav{
   max-width: 800px;
   min-width: 300px;
   margin: 30px 40px 0 40px;
+  letter-spacing: 1px;
 }
 .slidthree .container{
   display: flex;
@@ -343,7 +366,7 @@ nav{
   font-size: 1em;
   height: 110px;
   overflow: hidden;
-  font-weight: 400;
+  font-weight: 500;
   color: #022c18;
   letter-spacing: 1px;
   text-align: justify;
@@ -402,6 +425,7 @@ nav{
   max-width: 800px;
   min-width: 300px;
   margin: 30px 40px 0 40px;
+  letter-spacing: 1px;
 }
 .slidfour .messageForm{
   display: flex;
@@ -652,3 +676,175 @@ footer .footer_content .content2 p{
   background-color: #10b969 !important;
   color: #ffff !important;
 }
+.active{
+  display: block;
+}
+.disable{
+  display: none;
+}
+@media (max-width: 1010px){
+  .slidone{
+    background-size:300%;
+  }
+}
+@media (max-width: 894px) {
+  .slidone{
+    background-size:420%;
+  }
+  .socialmedias{
+    display: none;
+  }
+  .intro p{
+    font-size: 1.1em;
+  }
+  .me-skill{
+    grid-template-columns: 1fr;
+  }
+  .projects{
+    grid-template-columns:1fr;
+  }
+  .slidfour .messageForm{
+    width: 70%;
+  }
+  footer .footer_content{
+    flex-direction: column;
+    align-items: start;
+    gap:30px;
+  }
+  .logo{
+    margin-left: 10px;
+  }
+  .logo p{
+    display: none;
+  }
+  .intro{
+    margin-top: 40px;
+  }
+  .caseStudy_slid2 .caseStudy_container .buttons{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    gap:10px;
+  }
+  .caseStudy_slid2 .caseStudy_container .buttons a{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1em;
+  }
+  .caseStudy_slid1{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px ;
+    gap: 20px;
+  }
+  .caseStudy_slid1 p{
+    font-size: 1em;
+  }
+  .caseStudy_slid1 a{
+    font-size: 1em;
+  }
+  .caseStudy_slid2 .caseStudy_container p{
+    font-size: 1em;
+  }
+  .caseStudy_slid2 .caseStudy_container .heading{
+    font-size: 1.5em;
+  }
+  footer .footer_content .content1 ul li a{
+    font-size: 1.3em;
+  }
+  footer .footer_content .content2 p{
+    font-size: .9em;
+  }
+  .copyright{
+    margin-bottom: 40px;
+    font-size:.6em;
+    letter-spacing: 1px;
+  }
+  .slidtwo span{
+    font-size: 1.1em;
+  }
+  .slidthree span{
+    font-size: 1.1em;
+  }
+  .slidfour span{
+    font-size: 1.1em;
+  }
+  .slidfour .messageForm button{
+    font-size: 1em;
+  }
+  .known_me button{
+    font-size: 1em;
+  }
+  .intro button{
+    font-size: 1em;
+  }
+  .known_me .content p{
+    font-size: 1em;
+  }
+  .known_me .content p a{
+    font-size: 1em;
+  }
+  .skills ul li{
+    font-size: .9em;
+  }
+  .menu,.logo{
+    font-size: .9rem;
+  }
+  .menu{
+    gap: 20px;
+  }
+}
+@media (max-width: 667px) {
+  .logo p{
+    display: block;
+    font-size: 1.2em;
+  }
+  .menu{
+    display: none;
+  }
+  .innermenu i{
+    display: block;
+  }
+  .want{
+    border-top: 1px solid #1e1e1e23;
+  }
+  .phone_menu{
+    padding-top: 80px;
+    list-style: none;
+    position: fixed;
+    width: 100%;
+    background-color: #ffff;
+    z-index: 1;
+    animation: fade .5s ease;
+  }
+  @keyframes fade {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .phone_menu li{
+    text-align: end;
+    padding:15px 30px 15px 0;
+    border-bottom: 1px solid #1e1e1e23;
+    height: 100%;
+    cursor: pointer;
+    color: #10b969;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  .phone_menu li:hover{
+    color: #059652;
+  }
+  .phone_menu li a{
+    color: #10b969;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
