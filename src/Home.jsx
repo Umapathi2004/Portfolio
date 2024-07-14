@@ -97,7 +97,7 @@ export const Home = () => {
     <>
     <nav>
         <div className="logo">
-            <img src="../public/icon.png" alt="" />
+            <img src="./assets/icon.png" alt="" />
             <p>Umapathi</p>
         </div>
         <div className='innermenu'>
