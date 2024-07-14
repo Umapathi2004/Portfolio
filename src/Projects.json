@@ -6,7 +6,7 @@
         "gitlink":"https://github.com/Umapathi2004/Hiddenleaf",
         "tools":["HTML","CSS","PHP","Javascript","Git","GitHub","MySQL","Database"],
         "detials":"Hiddenleaf is a comprehensive platform designed for anime enthusiasts. Whether you’re a casual viewer or a dedicated fan, Hiddenleaf offers a seamless experience to watch your favorite anime series. The site features a vast library of anime content, ensuring that there's something for everyone. In addition to streaming anime, Hiddenleaf provides detailed reviews and in-depth information about each series. Users can read reviews to get insights into the storylines, characters, and overall quality of the anime. This feature helps users make informed decisions about what to watch next, enhancing their viewing experience.One of the standout features of Hiddenleaf is the easy download option. Users can download episodes effortlessly for offline viewing, allowing them to enjoy their favorite anime anytime, anywhere. The platform's user-friendly interface makes navigation simple and intuitive, ensuring a hassle-free experience for all users.",
-        "img":"../public/Project1.png"
+        "img":"Project1.png"
     },
     {
         "id":2,
@@ -15,7 +15,7 @@
         "gitlink":"https://github.com/Umapathi2004/Portfolio",
         "tools":["HTML","CSS","React","Javascript","Git","GitHub"],
         "detials":"Umapathi is a personal portfolio website created using React, JavaScript, HTML, and CSS. This site serves as a comprehensive showcase of my skills, projects, and professional journey. It is designed to provide visitors with a clear understanding of my expertise and the breadth of my work in web development.The portfolio highlights various projects I have worked on, each demonstrating my proficiency in different aspects of web development. From dynamic, interactive websites to robust backend solutions, each project is presented with detailed descriptions and visual examples. This allows potential employers and collaborators to see the practical applications of my skills.In addition to project showcases, Umapathi includes sections about my background, experience, and the tools and technologies I specialize in. The user-friendly design ensures easy navigation, making it simple for visitors to explore my work and learn more about my professional journey. Visit my portfolio to discover how my skills and experience can contribute to your next project.",
-        "img":"../public/Project2.png"
+        "img":"Project2.png"
     },
     {
         "id":3,
@@ -33,7 +33,7 @@
         "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/WeatherApp",
         "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
         "detials":"I've developed a robust weather finding application using React, designed to deliver accurate and up-to-date weather information to users. The app utilizes APIs to fetch real-time weather data for any location globally, ensuring users have access to reliable forecasts and current conditions.The interface is intuitive, allowing users to easily search for weather updates by city or location coordinates. It provides detailed weather reports, including temperature, humidity, wind speed, and precipitation forecasts. Users can also view extended forecasts to plan ahead effectively.Beyond basic weather data, the app offers additional features such as interactive maps, satellite imagery, and historical weather data analysis. These tools help users gain deeper insights into weather patterns and trends, making the app valuable for both casual users and weather enthusiasts.",
-        "img":"../public/Project4.png"
+        "img":"Project4.png"
     },
     {
         "id":5,
@@ -42,7 +42,7 @@
         "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/Amount",
         "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
         "detials":"My Currency Conversion app, built with React, simplifies the process of converting currencies for users worldwide. It leverages API integration to fetch real-time exchange rates, ensuring accuracy and reliability in currency conversions. The app supports a wide range of currencies, making it versatile for users dealing with various international transactions.The user interface is designed to be user-friendly and efficient. Users can easily select the currencies they want to convert, enter the amount, and instantly see the converted value. This streamlined process helps users make informed financial decisions without the hassle of manual calculations or searching for exchange rates.Beyond basic currency conversion, the app provides additional features such as historical exchange rate charts and currency trend analysis. These tools enable users to track currency fluctuations over time and make predictions based on historical data. Whether you’re a traveler, investor, or business professional, the Currency Conversion app offers valuable insights and functionalities to manage your currency needs effectively.",
-        "img":"../public/Project5.png"
+        "img":"Project5.png"
     },
     {
         "id":6,
@@ -51,7 +51,7 @@
         "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/QRcode",
         "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
         "detials":"The QR Code Generator website I've developed provides a convenient tool for creating QR codes effortlessly. Users can generate QR codes for various types of data, including URLs, text, contact information, and more. The platform supports customization options such as QR code color selection and size adjustment, allowing users to tailor the appearance of their QR codes to suit their needs.The user interface is designed to be intuitive and user-friendly, ensuring that even those unfamiliar with QR technology can easily navigate and use the service. Once generated, QR codes can be downloaded in PNG format for printing or sharing digitally. This makes it ideal for businesses, events, and personal use cases where quick access to information via QR codes is beneficial.Additionally, the website provides insights into QR code usage trends and best practices for effective implementation. Whether you're promoting a website, sharing contact details, or enhancing marketing campaigns, the QR Code Generator website offers a versatile solution for integrating QR technology into your strategies.",
-        "img":"../public/Project6.png"
+        "img":"Project6.png"
     },
     {
         "id":7,
@@ -60,7 +60,7 @@
         "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/Cards",
         "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
         "detials":"I've developed a dynamic social media profile website that serves as a comprehensive platform for users to create and manage their online identities. Built with modern web technologies, the website allows users to create personalized profiles with detailed information such as bio, interests, contact details, and more. It offers a seamless user experience with intuitive navigation and interactive features.Users can connect with friends, follow updates from others, and share posts, photos, and videos within their network. The platform supports real-time updates, ensuring users stay connected and informed about the latest activities and interactions within their social circle. Privacy settings and customization options empower users to control their profile visibility and content sharing preferences.Beyond personal profiles, the website may include features like messaging, groups, events, and notifications to enhance user engagement and community interaction. It provides a space for users to express themselves, build relationships, and participate in discussions and activities based on shared interests and connections.",
-        "img":"../public/Project7.png"
+        "img":"Project7.png"
     },
     {
         "id":8,
@@ -69,6 +69,6 @@
         "gitlink":"https://github.com/Umapathi2004/React-Projects/tree/main/Cards",
         "tools":["HTML","CSS","React","Javascript","Git","GitHub","API"],
         "detials":"My shopping cart app, built using React, offers a robust platform for users to browse, select, and purchase products online. The app features a responsive design that adapts seamlessly across devices, providing an optimized shopping experience on desktops, tablets, and smartphones.Users can explore a wide range of products categorized neatly for easy navigation. Each product listing includes detailed descriptions, pricing information, and images to help users make informed purchasing decisions. The shopping cart functionality allows users to add items, adjust quantities, and remove products as needed before proceeding to checkout.The checkout process is streamlined, with secure payment options and order confirmation features ensuring a smooth transaction experience. Additionally, the app may include features such as user accounts for order history tracking, wish lists, and customer support integration to enhance user satisfaction and engagement.",
-        "img":"../public/Project8.png"
+        "img":"Project8.png"
     }
 ]

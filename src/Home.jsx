@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import {Toaster ,toast} from 'sonner';
 import Projects from "./Projects.json"
 import { Link } from 'react-router-dom'
+import icon from "./assets/icon.png"
 export const Home = () => {
     const [manuAction,setmenuAction]=useState(false);
     const addAction=()=>{
@@ -97,7 +98,7 @@ export const Home = () => {
     <>
     <nav>
         <div className="logo">
-            <img src="./assets/icon.png" alt="" />
+            <img src={icon} alt="" />
             <p>Umapathi</p>
         </div>
         <div className='innermenu'>

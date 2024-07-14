@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import icon from "./assets/icon.png"
 import Projects from './Projects.json';
 
 export const CaseStudy = () => {
@@ -28,7 +29,7 @@ export const CaseStudy = () => {
     <>
     <nav>
         <div className="logo">
-            <img src="../public/icon.png" alt="" />
+            <img src={icon} alt="" />
             <p>Umapathi</p>
         </div>
         <div className='innermenu'>
