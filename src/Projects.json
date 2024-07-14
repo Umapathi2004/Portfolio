@@ -24,7 +24,7 @@
         "gitlink":"https://github.com/Umapathi2004/Hiddenleaf",
         "tools":["HTML","CSS","PHP","Javascript","Git","GitHub","API","MySQL","Database"],
         "detials":"NN Teach is an educational platform designed to facilitate the learning of programming languages. Built with a focus on user experience, NN Teach provides a comprehensive and accessible way for users to study various programming languages. The website offers structured courses, interactive lessons, and a plethora of resources to ensure a thorough understanding of the material.One of the standout features of NN Teach is its ease of use. The platform is designed to be intuitive, allowing users to navigate through courses effortlessly. Each programming language is broken down into manageable sections, with clear explanations and examples. This structured approach makes it easier for learners to grasp complex concepts and apply them in practical scenarios.Additionally, NN Teach provides downloadable notes for each lesson, enabling users to study offline at their convenience. These notes are meticulously crafted to complement the online content, ensuring that learners have all the necessary resources at their fingertips. Whether you’re a beginner looking to start your programming journey or an advanced learner seeking to deepen your knowledge, NN Teach is the ideal platform to support your learning goals.",
-        "img":"../public/Project3.png"
+        "img":"Project3.png"
     },
     {
         "id":4,
