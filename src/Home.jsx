@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import {Toaster ,toast} from 'sonner';
 import Projects from "./Projects.json"
 import { Link } from 'react-router-dom'
 export const Home = () => {
@@ -50,10 +51,18 @@ export const Home = () => {
             message: '',
           });
     
-          alert('Form submitted successfully!');
+          // alert('Form submitted successfully!');
+          const notifySuccess = () => {
+            toast.success('Form submitted successfully!');
+          };
+          notifySuccess();
         } catch (error) {
-          console.error('Error submitting form:', error);
-          alert('Failed to submit form. Please try again later.');
+          // console.error('Error submitting form:', error);
+          // alert('Failed to submit form. Please try again later.');
+          const notifyError = () => {
+            toast.error('Failed to submit form. Please try again later.');
+          };
+          notifyError();
         } finally {
           setSubmitting(false);
         }
@@ -107,6 +116,7 @@ export const Home = () => {
             <li onClick={scrollToproject}>Projects</li>
             <li onClick={scrollTocontact}>Contects</li>
     </ul>
+    <Toaster richColors/>
     <div className="slidone" ref={homeRef}>
         <div className="socialmedias">
             <a href="https://www.linkedin.com/in/umapathi2004/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
