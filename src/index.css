@@ -727,6 +727,12 @@ footer .footer_content .content2 p{
     font-size: 1em;
     font-weight: 400;
   }
+  .skills ul{
+    gap: 10px;
+  }
+  .caseStudy_slid2 .caseStudy_container ul{
+    gap: 10px;
+  }
   .slidfour .messageForm{
     width: 70%;
   }
