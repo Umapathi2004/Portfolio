@@ -93,6 +93,12 @@ export const Home = () => {
     addAction();
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
+  const scrollToprojects = () => {
+    projectRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  const scrollTocontacts = () => {
+    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   const skills=['HTML','CSS','JavaScript','PHP','MySQL','RDBMS','React','Bootstrap','Git','GitHub','Responsive Design','APIs']
   return (
     <>
@@ -129,7 +135,7 @@ export const Home = () => {
         <div className="intro">
             <h1>Hey, I'm Umapathi</h1>
             <p>Skilled web developer with expertise in building responsive and user-friendly web applications, ensuring optimal results.</p>
-            <button onClick={scrollToproject}>Projects</button>
+            <button onClick={scrollToprojects}>Projects</button>
         </div>
     </div>
     <div className="slidtwo" ref={aboutRef}>
@@ -148,7 +154,7 @@ export const Home = () => {
 
                 <p>I'm open to <b>Job</b> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <b>contact</b> me.</p>
                 </div>
-                <button onClick={scrollTocontact}>Contact</button>
+                <button onClick={scrollTocontacts}>Contact</button>
             </div>
             <div className="skills">
             <div className="heading">My Skills</div>
