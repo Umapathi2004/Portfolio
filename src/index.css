@@ -720,6 +720,12 @@ footer .footer_content .content2 p{
   }
   .projects{
     grid-template-columns:1fr;
+    gap:40px;
+    margin-top: 50px;
+  }
+  .projects_detials .para{
+    font-size: 1em;
+    font-weight: 400;
   }
   .slidfour .messageForm{
     width: 70%;
