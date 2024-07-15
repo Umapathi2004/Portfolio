@@ -100,7 +100,7 @@ nav{
 .slidone{
   width: 100%;
   background-image: url("./assets/Background.svg");
-  background-color: #022c18;
+  background-color: #d0fce7;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment:fixed;
@@ -850,6 +850,7 @@ footer .footer_content .content2 p{
     width: 100%;
     background-color: #ffff;
     z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   
   .phone_menu li{
@@ -871,5 +872,12 @@ footer .footer_content .content2 p{
     font-weight: 500;
     text-decoration: none;
   }
+  .slidfour .messageForm input{
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  .slidfour .messageForm textarea{
+    padding: 10px;
+    margin-bottom: 15px;
+  }
 }
-
