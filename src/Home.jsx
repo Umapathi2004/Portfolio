@@ -93,12 +93,20 @@ export const Home = () => {
     addAction();
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
+  //this scroll used for inner contectand project
+  const scrollToAbouts = () => {
+    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  const scrollTohomes = () => {
+    homeRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   const scrollToprojects = () => {
     projectRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   const scrollTocontacts = () => {
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
+
   const skills=['HTML','CSS','JavaScript','PHP','MySQL','RDBMS','React','Bootstrap','Git','GitHub','Responsive Design','APIs']
   return (
     <>
@@ -109,10 +117,10 @@ export const Home = () => {
         </div>
         <div className='innermenu'>
         <ul className='menu'>
-            <li onClick={scrollTohome}><Link to={"/"}>Home</Link></li>
-            <li onClick={scrollToAbout}>About</li>
-            <li onClick={scrollToproject}>Projects</li>
-            <li onClick={scrollTocontact}>Contects</li>
+            <li onClick={scrollTohomes}><Link to={"/"}>Home</Link></li>
+            <li onClick={scrollToAbouts}>About</li>
+            <li onClick={scrollToprojects}>Projects</li>
+            <li onClick={scrollTocontacts}>Contects</li>
         </ul>
         <i class="fa-solid fa-bars" onClick={addAction}></i>
         </div>
