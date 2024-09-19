@@ -1,8 +1,10 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import {Toaster ,toast} from 'sonner';
 import Projects from "./Projects.json"
 import { Link } from 'react-router-dom'
 import icon from "./assets/icon.png"
+import AOS from "aos";
+import "aos/dist/aos.css";
 export const Home = () => {
     const [manuAction,setmenuAction]=useState(false);
     const addAction=()=>{
@@ -106,7 +108,9 @@ export const Home = () => {
   const scrollTocontacts = () => {
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const skills=['HTML','CSS','JavaScript','PHP','MySQL','RDBMS','React','Bootstrap','Git','GitHub','Responsive Design','APIs']
   return (
     <>
@@ -180,9 +184,9 @@ export const Home = () => {
         <span>Here you will find some of the personal and clients projects that I created with each project containing its own case study</span>
         <div className="container">{
                 Projects.map((project)=>(
-                   <div className="projects" key={project.id}>
-                   <img src={project.img} alt=""/>
-                   <div className="projects_detials">
+                   <div className="projects">
+                   <img src={project.img} alt="" data-aos="fade-right" data-aos-delay="50"/>
+                   <div className="projects_detials" data-aos="fade-left" data-aos-delay="50">
                        <div className="heading">{project.name}</div>
                        <div className="para">{project.discription}</div>
                        <Link to={`/CaseStudy?id=${project.id}`}>
@@ -209,7 +213,7 @@ export const Home = () => {
             <button type="submit">Submit</button>
         </form>
     </div>
-    <footer>
+    <footer >
         <div className="footer_content">
             <div className="content1">
                 <h2>Social</h2>
