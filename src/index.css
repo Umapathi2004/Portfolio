@@ -340,6 +340,7 @@ nav{
   margin-top: 100px;
   margin-bottom: 40px;
   place-items: center;
+  overflow-x: hidden;
 }
 .projects img{
   width:100%;
