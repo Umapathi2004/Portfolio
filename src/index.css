@@ -698,6 +698,21 @@ footer .footer_content .content2 p{
   animation: fade_out .5s ease;
   display: none;
 }
+.ToTop{
+  width: 60px;
+  height: 60px;
+  background-color: #10b969;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 6;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  font-size: 2em;
+}
 @keyframes fade_out {
   0%{
     opacity: 1;
