@@ -910,3 +910,68 @@ footer .footer_content .content2 p{
     margin-bottom: 15px;
   }
 }
+
+
+
+/* Theme toggle */
+.theme-toggle {
+  position: fixed;
+  top: 27px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.theme-toggle i { font-size: 1.4em; }
+.theme-toggle .fa-moon { color: #10b969; }
+.theme-toggle .fa-sun { color: #fff; }
+
+/* Submit spinner */
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Dark mode */
+.dark-mode .scroll { background-color: #333; }
+.dark-mode nav { background-color: #1a1a1a; }
+.dark-mode .phone_menu { background-color: #1a1a1a; }
+.dark-mode .phone_menu li { border-color: #333; }
+.dark-mode .slidone { background-color: #0d2b1a; background-image: url('./assets/Background-dark.svg'); }
+.dark-mode .socialmedias { background-color: #1a1a1a; }
+.dark-mode .socialmedias a i { color: #10b969; }
+.dark-mode .intro h1, .dark-mode .intro p { color: #e0e0e0; }
+.dark-mode .slidtwo { background-color: #121212; }
+.dark-mode .slidtwo .heading h2,
+.dark-mode .slidtwo span,
+.dark-mode .known_me .content p,
+.dark-mode .known_me .heading,
+.dark-mode .skills .heading { color: #e0e0e0; }
+.dark-mode .skills ul li { background-color: #1e3a2a; color: #e0e0e0; }
+.dark-mode .skills ul li:hover { background-color: #2a4a38; }
+.dark-mode .slidthree { background-color: #0d2b1a; }
+.dark-mode .slidthree .heading h2,
+.dark-mode .slidthree span,
+.dark-mode .projects_detials .heading,
+.dark-mode .projects_detials .para { color: #e0e0e0; }
+.dark-mode .slidfour { background-color: #121212; }
+.dark-mode .slidfour .heading h2,
+.dark-mode .slidfour span { color: #e0e0e0; }
+.dark-mode .slidfour .messageForm { background-color: #1e1e1e; }
+.dark-mode .slidfour .messageForm label { color: #e0e0e0; }
+.dark-mode .slidfour .messageForm input,
+.dark-mode .slidfour .messageForm textarea { background-color: #2a2a2a; color: #e0e0e0; }
+.dark-mode .caseStudy_slid1 { background-color: #0d2b1a; }
+.dark-mode .caseStudy_slid1 h1, .dark-mode .caseStudy_slid1 p { color: #e0e0e0; }
+.dark-mode .caseStudy_slid2 { background-color: #121212; }
+.dark-mode .caseStudy_slid2 .caseStudy_container .heading,
+.dark-mode .caseStudy_slid2 .caseStudy_container p { color: #e0e0e0; }
+.dark-mode .caseStudy_slid2 .caseStudy_container ul li { background-color: #1e3a2a; color: #e0e0e0; }

@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom'
 import icon from "./assets/icon.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTheme } from './App';
 export const Home = () => {
+  const { dark, setDark } = useTheme();
   const [manuAction, setmenuAction] = useState(false);
   const addAction = () => {
     manuAction ? setmenuAction(false) : setmenuAction(true);
@@ -17,7 +19,6 @@ export const Home = () => {
   });
 
   const [submitting, setSubmitting] = useState(false); // State to track form submission status
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
@@ -31,21 +32,24 @@ export const Home = () => {
     setSubmitting(true);
 
     try {
+      setTimeout(() => {
+        
+      }, 1000);
       // Example of handling form submission (replace with your own logic)
       console.log(formData);
 
       // Simulate asynchronous operation (e.g., API call to Formspree)
-      const response = await fetch('https://formspree.io/f/xpwawpvg', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      // const response = await fetch('https://formspree.io/f/xpwawpvg', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify(formData),
+      // });
 
-      if (!response.ok) {
-        throw new Error('Failed to submit form.');
-      }
+      // if (!response.ok) {
+      //   throw new Error('Failed to submit form.');
+      // }
 
       // Optionally reset the form fields after successful submission
       setFormData({
@@ -137,6 +141,13 @@ const newSkills =[
           <p>Umapathi</p>
         </div>
         <div className='innermenu'>
+          <div className="theme-toggle" onClick={() => setDark(d => !d)}>
+            <i className="fa-solid fa-sun"></i>
+            <div className={`toggle-track ${dark ? 'on' : ''}`}>
+              <div className="toggle-thumb"></div>
+            </div>
+            <i className="fa-solid fa-moon"></i>
+          </div>
           <ul className='menu'>
             <li onClick={scrollTohomes}><Link to={"/"}>Home</Link></li>
             <li onClick={scrollToAbouts}>About</li>
@@ -243,7 +254,7 @@ const newSkills =[
           <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Enter Your Email' required id='mail' />
           <label htmlFor="message">Message</label>
           <textarea placeholder='Enter Your Message' name="message" value={formData.message} onChange={handleChange} required id='message'></textarea>
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={submitting}>{submitting ? <span className="spinner"></span> : 'Submit'}</button>
         </form>
       </div>
       <footer >
