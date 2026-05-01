@@ -39,17 +39,17 @@ export const Home = () => {
       console.log(formData);
 
       // Simulate asynchronous operation (e.g., API call to Formspree)
-      // const response = await fetch('https://formspree.io/f/xpwawpvg', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(formData),
-      // });
+      const response = await fetch('https://formspree.io/f/xpwawpvg', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-      // if (!response.ok) {
-      //   throw new Error('Failed to submit form.');
-      // }
+      if (!response.ok) {
+        throw new Error('Failed to submit form.');
+      }
 
       // Optionally reset the form fields after successful submission
       setFormData({
@@ -254,7 +254,7 @@ const newSkills =[
           <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Enter Your Email' required id='mail' />
           <label htmlFor="message">Message</label>
           <textarea placeholder='Enter Your Message' name="message" value={formData.message} onChange={handleChange} required id='message'></textarea>
-          <button type="submit" disabled={submitting}>{submitting ? <span className="spinner"></span> : 'Submit'}</button>
+          <button type="submit" disabled={submitting}>{submitting ? <i class="fa-solid fa-hourglass fa-spin"></i> : 'Submit'}</button>
         </form>
       </div>
       <footer >

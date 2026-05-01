@@ -2,6 +2,7 @@ import {React,useState,useRef,createContext,useContext} from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './Home'
 import { CaseStudy } from './CaseStudy'
+import { NotFound } from './NotFound'
 
 export const ThemeContext = createContext();
 export const useTheme = () => useContext(ThemeContext);
@@ -35,6 +36,7 @@ export const App = () => {
     <Routes>
     <Route path='/' exact element={<Home/>}/>
     <Route path='/CaseStudy' element={<CaseStudy/>}/>
+    <Route path='*' element={<NotFound/>}/>
     </Routes>
     </BrowserRouter>
     <div className="ToTop" onClick={ScrollToTop} style={{display:`${scrollHeight?"flex":"none"}`}}>
