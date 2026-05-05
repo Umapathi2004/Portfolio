@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './Home'
 import { CaseStudy } from './CaseStudy'
 import { NotFound } from './NotFound'
+import { GoogleTranslateProvider } from './GoogleTranslateProvider'
+import { LanguageSwitcher } from './LanguageSwitcher'
 
 export const ThemeContext = createContext();
 export const useTheme = () => useContext(ThemeContext);
@@ -24,6 +26,7 @@ export const App = () => {
     }
   return (
     <ThemeContext.Provider value={{ dark, setDark }}>
+    <GoogleTranslateProvider>
     <div className={dark ? 'dark-mode' : ''}>
     <div className="scroll">
       <div className="scrollsection" style={{width:`${first}%`}}></div>
@@ -42,7 +45,9 @@ export const App = () => {
     <div className="ToTop" onClick={ScrollToTop} style={{display:`${scrollHeight?"flex":"none"}`}}>
     <i class="fa-solid fa-caret-up"></i>
     </div>
+    {/* <LanguageSwitcher /> */}
     </div>
+    </GoogleTranslateProvider>
     </ThemeContext.Provider>
   )
 }
