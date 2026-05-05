@@ -206,14 +206,14 @@ const newSkills =[
 
   <button onClick={scrollTocontacts}>Contact</button>
 </div>
-          <div className="skills">
+          <div className="skills ">
             <div className="heading">My Skills</div>
-            <ul>
+            <ul className="notranslate">
               {skills.map((skill, index) => (<li key={index}>{skill}</li>))}
             </ul>
             <br/>
              <div className="heading">New Learning Skills</div>
-            <ul>
+            <ul className="notranslate">
               {newSkills.map((skill, index) => (<li key={index}>{skill}</li>))}
             </ul>
           </div>
